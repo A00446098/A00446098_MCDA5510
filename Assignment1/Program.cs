@@ -13,9 +13,12 @@ namespace A00446098_Assignment1
         {
             
             var watch = System.Diagnostics.Stopwatch.StartNew();
-            string outfile = @"/Users/james/Downloads/Assignment1/output/WriteFile.txt";
-            string skipped = @"/Users/james/Downloads/Assignment1/output/skipped.txt";
-            string log = @"/Users/james/Downloads/Assignment1/output/log.txt";
+            string pd="@\"//enter path here";
+            
+            string outfile = pd+"/output/WriteFile.txt\"";
+            string skipped = pd+"/output/skipped.txt\"";
+            string log = pd+"/output/log.txt\"";
+            string nw=pd+"/Sample Data\"";
             DirWalker fw = new DirWalker();
            
             using (StreamWriter outputFile = new StreamWriter(outfile, true))
@@ -24,7 +27,7 @@ namespace A00446098_Assignment1
                 outputFile.WriteLine("First Name,Last Name,Street Number,Street,City,Province,Postal Code,Country,Phone Number,email Address");
 
             }
-            fw.walk(@"/Users/james/Downloads/Assignment1/Sample Data");
+            fw.walk(nw);
             
             foreach (string i in globalvars.valid)
             {
