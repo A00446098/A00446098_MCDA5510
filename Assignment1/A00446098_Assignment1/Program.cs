@@ -14,7 +14,7 @@ namespace A00446098_Assignment1
             
             var watch = System.Diagnostics.Stopwatch.StartNew();
             string pd="@\"//enter path here";
-            string 
+           
             string outfile = pd+"/output/WriteFile.txt\"";
             string skipped = pd+"/output/skipped.txt\"";
             string log = pd+"/output/log.txt\"";
