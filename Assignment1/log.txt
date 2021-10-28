@@ -1,0 +1,3 @@
+total number of valid rows. :201076
+total number of skipped rows. :81838
+time is :55
